@@ -1,0 +1,66 @@
+html{
+    font-size: 16px;
+
+}
+
+body{
+    font-family: 'Droid Serif'!important;
+}
+
+nav img{
+    height: 6rem;
+}
+
+nav li>a{
+    margin-top: 2.0rem;
+    font-size: 1.2rem;
+}
+
+#bio_sidebar img{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#bio_sidebar h4{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+#bio_sidebar p{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #f7f7f9;
+    position: absolute;
+    bottom: 0;
+    line-height: 4rem;
+}
+
+#photo_section img{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#main img{
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -o-transition: all .3s ease; /* IE 9 */
+    -ms-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+}
+
+#main img:hover{
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(50) scale(3.0); /* Safari and Chrome */
+    -moz-transform:scale(3.0); /* Firefox */
+    -ms-transform:scale(3.0); /* IE 9 */
+    -o-transform:translatZ(50) scale(3.0); /* Opera */
+    transform:translatZ(50) scale(3.0);
+}
