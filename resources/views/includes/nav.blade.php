@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light bg-faded">
     <div class="container">
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
+        <a class="navbar-brand" href="#"><img src="images/logo/logo.jpg"></a>
 
         <!-- Links -->
         <ul class="nav navbar-nav pull-xs-right">

@@ -36,14 +36,21 @@ nav li>a{
 footer{
     width: 100%;
     background-color: #f7f7f9;
-    position: absolute;
-    bottom: 0;
     line-height: 4rem;
+}
+
+#target_image{
+    -moz-transition: background-image 0.2s ease-in-out;
+}
+
+#photo_section{
+    margin-bottom: 1rem;
 }
 
 #photo_section img{
     width: 100%;
     margin-top: 1rem;
+
 }
 
 .col-md-4>img:hover{

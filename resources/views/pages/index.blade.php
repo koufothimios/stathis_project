@@ -12,31 +12,18 @@
             <div id="photo_section" class="col-md-10">
                 <div class="row">
                     <div class="col-md-12">
-                        <img id="target_image" src="images/1.jpg">
+                        <img id="target_image" src="{{$final_photos[0][0]}}">
                     </div>
                 </div>
+                @foreach($final_photos as $photo_array)
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/1.jpg">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/2.jpg">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/3.jpg">
-                    </div>
+                    @foreach($photo_array as $photo)
+                        <div class="col-md-4">
+                        <img src="{{$photo}}">
+                        </div>
+                    @endforeach
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/4.jpg">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/2.jpg">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/3.jpg">
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
