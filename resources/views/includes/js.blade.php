@@ -8,7 +8,12 @@
 
     $('.col-md-4').on("click", "img", function () {
         var source = $(this).attr('src');
-        $('#target_image').attr('src',source);
+        //$('#target_image').attr('src',source);
+        $('#target_image').fadeOut(400,function(){
+            $('#target_image').attr('src',source);
+        }).fadeIn(400);
+        //$('#target_image').attr('src',source);
+
     });
 
 </script>

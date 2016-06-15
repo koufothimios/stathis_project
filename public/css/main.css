@@ -37,14 +37,12 @@ footer{
     width: 100%;
     background-color: #f7f7f9;
     line-height: 4rem;
-}
-
-#target_image{
-    -moz-transition: background-image 0.2s ease-in-out;
+    position: fixed;
+    bottom: 0;
 }
 
 #photo_section{
-    margin-bottom: 1rem;
+    margin-bottom: 80px;
 }
 
 #photo_section img{
