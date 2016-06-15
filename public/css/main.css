@@ -54,23 +54,16 @@ footer{
 .col-md-4>img:hover{
     cursor: pointer;
 }
-/*
-#main img{
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    transition: all .3s ease;
+
+#image_1{
+    border-color: #0074D9;
+    border-width:0.2rem;
+    border-style:solid;
+    box-shadow: 7px 0 3px -2px #888, -7px 0 3px -2px #888;
 }
 
-#main img:hover{
-    cursor: pointer;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(50) scale(3.0);
-    -moz-transform:scale(3.0);
-    -ms-transform:scale(3.0);
-    -o-transform:translatZ(50) scale(3.0);
-    transform:translatZ(50) scale(3.0);
-}
-*/
+/*.col-md-4:first-child{
+    border-color: #0074D9;
+    border-width:0.2rem;
+    border-style:solid;
+}*/

@@ -15,15 +15,19 @@
                         <img id="target_image" src="{{$final_photos[0][0]}}">
                     </div>
                 </div>
+                <div id="thumb_photo_section">
+                <?php $id = 1; ?>
                 @foreach($final_photos as $photo_array)
                 <div class="row">
                     @foreach($photo_array as $photo)
                         <div class="col-md-4">
-                        <img src="{{$photo}}">
+                            <img id="image_{{$id}}" src="{{$photo}}">
                         </div>
+                        <?php $id = $id + 1; ?>
                     @endforeach
                 </div>
                 @endforeach
+                </div>
             </div>
         </div>
     </div>

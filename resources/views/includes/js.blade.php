@@ -7,11 +7,21 @@
 <script type="text/javascript">
 
     $('.col-md-4').on("click", "img", function () {
+        $('img').css({
+            "border": "0px",
+            "box-shadow": "none"
+        });
         var source = $(this).attr('src');
+        $(this).css({"border-color": "#0074D9",
+             "border-width":"0.2rem",
+             "border-style":"solid",
+             "box-shadow": "7px 0 3px -2px #888, -7px 0 3px -2px #888",
+         });
         //$('#target_image').attr('src',source);
-        $('#target_image').fadeOut(400,function(){
+        $('#target_image').fadeOut(300,function(){
             $('#target_image').attr('src',source);
-        }).fadeIn(400);
+
+        }).fadeIn(300);
         //$('#target_image').attr('src',source);
 
     });
