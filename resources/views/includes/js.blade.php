@@ -15,7 +15,7 @@
         $(this).css({"border-color": "#DDDDDD",
              "border-width":"0.2rem",
              "border-style":"solid",
-             "box-shadow": "0px 0px 8px 6px #888",
+             "box-shadow": "0px 0px 5px 3px #888",
          });
         //$('#target_image').attr('src',source);
         $('#target_image').fadeOut(300,function(){
