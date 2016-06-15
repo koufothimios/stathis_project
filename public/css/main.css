@@ -56,10 +56,10 @@ footer{
 }
 
 #image_1{
-    border-color: #0074D9;
+    border-color: #DDDDDD;
     border-width:0.2rem;
     border-style:solid;
-    box-shadow: 7px 0 3px -2px #888, -7px 0 3px -2px #888;
+    box-shadow: 0px 0px 8px 6px #888;
 }
 
 /*.col-md-4:first-child{
