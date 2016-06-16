@@ -73,6 +73,8 @@ footer{
 
 #vraveyseis_datetime_sidebar{
     font-size: 0.92rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 #vraveyseis_main_section{
@@ -84,13 +86,12 @@ footer{
 }
 
 #vraveyseis_main_section h2{
-    margin-top: 1rem;
     width: 100%;
     text-align: center;
 }
 
 #vraveyseis_main_section hr:last-child{
-    margin-bottom: 4rem;
+    margin-bottom: 40rem;
 }
 
 #vraveyseis_datetime_sidebar a:active{

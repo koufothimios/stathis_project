@@ -42,10 +42,13 @@ class HomeController extends Controller
         $final_photos = [];
         foreach($vraveyseis_photos as $photo){
             $vraveyseis_photos[$loop_counter] = substr($photo,strlen(public_path()));
+            array_push($final_photos, explode("-",$vraveyseis_photos[$loop_counter]));
+            $final_photos[$loop_counter][0] = $vraveyseis_photos[$loop_counter];
+            $final_photos[$loop_counter][2] = substr($final_photos[$loop_counter][2], 0, -4);
             $loop_counter++;
         }
-        //return $vraveyseis_photos;
-        return view('pages.vraveyseis',compact('vraveyseis_photos'));
+        //return $final_photos;
+        return view('pages.vraveyseis',compact('final_photos'));
     }
 
     public function seminaria(){

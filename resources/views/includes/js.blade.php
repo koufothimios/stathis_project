@@ -30,6 +30,11 @@
         return false;
     });
 
+    var number_of_items_in_sidebar = $('.sidebar_links').length;
+    var offsets = [];
+
+    //alert(number_of_items_in_sidebar);
+
     $(window).scroll(function () {
     //You've scrolled this much:
         var scroll = $(window).scrollTop();
@@ -38,10 +43,16 @@
         }else{
             $('#vraveyseis_datetime_sidebar').removeClass("fixed");
         }
+
+        // var hT = $('#2').offset().top;
+        // if (scroll > (hT)){
+        //     //alert('you have scrolled to the h1!');
+        //     if($('a').attr('href')==='#2'){
+        //         $('a').addClass('active');
+        //     }
+        // }else{
+        //     $('a').removeClass('active');
+        // }
     });
-
-</script>
-
-<script type="text/javascript">
 
 </script>
