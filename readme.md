@@ -1,4 +1,4 @@
-Photo Gallery Homepage with dynamic display of photos
+Photo Gallery Homepage with dynamic display of photos - Work in progress
 
 # Laravel PHP Framework
 
