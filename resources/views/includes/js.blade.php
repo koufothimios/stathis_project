@@ -30,4 +30,18 @@
         return false;
     });
 
+    $(window).scroll(function () {
+    //You've scrolled this much:
+        var scroll = $(window).scrollTop();
+        if(scroll>120){
+            $('#vraveyseis_datetime_sidebar').addClass("fixed");
+        }else{
+            $('#vraveyseis_datetime_sidebar').removeClass("fixed");
+        }
+    });
+
+</script>
+
+<script type="text/javascript">
+
 </script>

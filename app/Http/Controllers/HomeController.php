@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function gallery(){
         $directory = public_path()."/images/index_photos/";
         $index_photos = glob($directory . "*.jpg");
         $loop_counter = 1;
@@ -33,5 +33,30 @@ class HomeController extends Controller
         //return $index_photos;
         //$index_photos=["images/index_photos/1.jpg"];
         return view('pages.index',compact('final_photos'));
+    }
+
+    public function vraveyseis(){
+        $loop_counter = 0;
+        $directory = public_path()."/images/vraveyseis/";
+        $vraveyseis_photos = glob($directory . "*.jpg");
+        $final_photos = [];
+        foreach($vraveyseis_photos as $photo){
+            $vraveyseis_photos[$loop_counter] = substr($photo,strlen(public_path()));
+            $loop_counter++;
+        }
+        //return $vraveyseis_photos;
+        return view('pages.vraveyseis',compact('vraveyseis_photos'));
+    }
+
+    public function seminaria(){
+        return view('pages.seminaria');
+    }
+
+    public function epikoinwnia(){
+        return view('pages.epikoinwnia');
+    }
+
+    public function index(){
+        return redirect('/gallery');
     }
 }

@@ -70,3 +70,39 @@ footer{
 #target_image{
     margin-bottom: 1rem;
 }
+
+#vraveyseis_datetime_sidebar{
+    font-size: 0.92rem;
+}
+
+#vraveyseis_main_section{
+    margin-top: 1rem;
+}
+
+#vraveyseis_main_section img{
+    width: 100%;
+}
+
+#vraveyseis_main_section h2{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+#vraveyseis_main_section hr:last-child{
+    margin-bottom: 4rem;
+}
+
+#vraveyseis_datetime_sidebar a:active{
+    color:black;
+}
+
+.fixed {
+    position: fixed;
+    top:0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.scrollit {
+    float: right;
+}

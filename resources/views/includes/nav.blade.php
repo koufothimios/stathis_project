@@ -6,17 +6,32 @@
         <!-- Links -->
         <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item">
-                <a class="nav-link active" href="">Αρχική</a>
+                @if (strpos(Request::url(), 'gallery'))
+                    <a class="nav-link active" href="/gallery">Photo Gallery</a>
+                @else
+                    <a class="nav-link" href="/gallery">Photo Gallery</a>
+                @endif
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Κατηγορίες
-                </a>
-                <div class="dropdown-menu" aria-labelledby="Preview">
-                <a class="dropdown-item" href="#">Dropdown Link 1</a>
-                <a class="dropdown-item" href="#">Dropdown Link 2</a>
-                <a class="dropdown-item" href="#">Dropdown Link 3</a>
-                </div>
+            <li class="nav-item">
+                @if (strpos(Request::url(), 'vraveyseis'))
+                    <a class="nav-link active" href="/vraveyseis">Βραβεύσεις</a>
+                @else
+                    <a class="nav-link" href="/vraveyseis">Βραβεύσεις</a>
+                @endif
+            </li>
+            <li class="nav-item">
+                @if (strpos(Request::url(), 'seminaria'))
+                    <a class="nav-link active" href="/seminaria">Σεμινάρια</a>
+                @else
+                    <a class="nav-link" href="/seminaria">Σεμινάρια</a>
+                @endif
+            </li>
+            <li class="nav-item">
+                @if (strpos(Request::url(), 'epikoinwnia'))
+                    <a class="nav-link active" href="/epikoinwnia">Επικοινωνία</a>
+                @else
+                    <a class="nav-link" href="/epikoinwnia">Επικοινωνία</a>
+                @endif
             </li>
         </ul>
     </div>
