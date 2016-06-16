@@ -101,8 +101,7 @@ footer{
 .fixed {
     position: fixed;
     top:0;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 11.6rem;
 }
 .scrollit {
     float: right;
