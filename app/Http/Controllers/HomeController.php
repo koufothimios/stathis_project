@@ -67,11 +67,15 @@ class HomeController extends Controller
 
     public function sendmail(Request $request)
     {
-        // Mail::send('emails.blank', array('key' => 'value'), function($message)
-        // {
-        //     $message->from('ezeinis13@gmail.com');
-        //     $message->to('ezeinis@hotmail.gr', 'John Smith')->subject('Welcome!');
-        // });
+        $contactMessage = $request->message;
+        $name = $request->name;
+        $mailto = $request->mail;
+        $data = ['m'=>$contactMessage];
+        Mail::send('emails.blank', $data, function($message) use ($mailto,$name)
+        {
+            $message->from('ezeinis13@gmail.com');
+            $message->to('ezeinis@hotmail.gr', $mailto)->subject($name);
+        });
         return back();
     }
 }
