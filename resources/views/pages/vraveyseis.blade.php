@@ -9,9 +9,9 @@
             @foreach($final_photos as $photo)
                 <li class="nav-item">
                 @if($i==1)
-                    <a id="sidebar_link_{{$photo[1]}}" class="sidebar_links nav-link active" href="#{{$photo[1]}}">{{$photo[1]}}</a>
+                    <a id="sidebar_link_{{$photo[1]}}" class="sidebar_links nav-link active" href="#{{$photo[1]}}">{{substr($photo[1],0,-4)." ".substr($photo[1],-4)}}</a>
                 @else
-                    <a id="sidebar_link_{{$photo[1]}}" class="sidebar_links nav-link" href="#{{$photo[1]}}">{{$photo[1]}}</a>
+                    <a id="sidebar_link_{{$photo[1]}}" class="sidebar_links nav-link" href="#{{$photo[1]}}">{{substr($photo[1],0,-4)." ".substr($photo[1],-4)}}</a>
                 @endif
                 </li>
                 <?php $i++; ?>

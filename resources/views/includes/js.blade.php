@@ -49,7 +49,7 @@
             var hT = $('#'+h2_ids[i]).offset().top;
             var hX = $('#'+h2_ids[i]).height();
             if(scroll>hT-hX){
-                $('a').removeClass('active');
+                $('#vraveyseis_datetime_sidebar').find('a').removeClass('active');
                 $('#vraveyseis_datetime_sidebar').find('a').eq(i).addClass('active');
             }else{
 
