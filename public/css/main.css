@@ -98,6 +98,10 @@ footer{
     color:black;
 }
 
+#vraveyseis_datetime_sidebar a:hover{
+    cursor: pointer;
+}
+
 .fixed {
     position: fixed;
     top:0;
