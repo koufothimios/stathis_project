@@ -9,6 +9,7 @@
         @yield('main')
 
         @include('includes.footer')
-        @include('includes.js')
+        @include('includes.js_default')
+        @yield('js')
     </body>
 </html>

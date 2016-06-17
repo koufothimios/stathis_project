@@ -30,3 +30,28 @@
     </div>
 </div>
 @stop
+
+@section('js')
+<script type="text/javascript">
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if(scroll>120){
+            $('#vraveyseis_datetime_sidebar').addClass("fixed");
+        }else{
+            $('#vraveyseis_datetime_sidebar').removeClass("fixed");
+        }
+
+        for(i=0;i<h2_length;i=i+1){
+            var hT = $('#'+h2_ids[i]).offset().top;
+            var hX = $('#'+h2_ids[i]).height();
+            if(scroll>hT-hX){
+                $('#vraveyseis_datetime_sidebar').find('a').removeClass('active');
+                $('#vraveyseis_datetime_sidebar').find('a').eq(i).addClass('active');
+            }else{
+
+            }
+        }
+
+    });
+</script>
+@stop
