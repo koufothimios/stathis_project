@@ -19,3 +19,5 @@ Route::get('/vraveyseis', 'HomeController@vraveyseis');
 Route::get('/seminaria', 'HomeController@seminaria');
 
 Route::get('/epikoinwnia', 'HomeController@epikoinwnia');
+
+Route::get('/mail/send', 'HomeController@sendmail');

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use Mail;
+
 class HomeController extends Controller
 {
     public function gallery(){
@@ -61,5 +63,15 @@ class HomeController extends Controller
 
     public function index(){
         return redirect('/gallery');
+    }
+
+    public function sendmail(Request $request)
+    {
+        // Mail::send('emails.blank', array('key' => 'value'), function($message)
+        // {
+        //     $message->from('ezeinis13@gmail.com');
+        //     $message->to('ezeinis@hotmail.gr', 'John Smith')->subject('Welcome!');
+        // });
+        return back();
     }
 }
